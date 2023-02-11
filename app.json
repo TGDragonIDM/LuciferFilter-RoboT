@@ -1,5 +1,5 @@
 {
-    "name": "LuciferFilter_RoboT",
+    "name": "LuciferFilter-RoboT",
     "description": "When you going to send File on Telegram Channel this bot will save that in database, So you can get file in Bot PM",
     "stack": "container",
     "keywords": [
@@ -10,11 +10,11 @@
       "pyrogram",
       "bot"
     ],
-    "website": "https://github.com/Pr0fess0r99/LuciferFilter_RoboT",
-    "repository": "https://github.com/Pr0fess0r99/LuciferFilter_RoboT",
+    "website": "https://github.com/Pr0fess0r99/LuciferFilter-RoboT",
+    "repository": "https://github.com/Pr0fess0r99/LuciferFilter-RoboT",
     "env": {
         "BOT_TOKEN": {
-            "description": "Your bot token.",
+            "description": "Your Telegram bot token.",
             "required": true
         },
         "API_ID": {
