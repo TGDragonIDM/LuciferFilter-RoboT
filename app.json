@@ -1,22 +1,17 @@
 {
-    "name": "IMDb-Movie-Bot",
-    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "name": "LuciferFilter_RoboT",
+    "description": "When you going to send File on Telegram Channel this bot will save that in database, So you can get file in Bot PM",
     "stack": "container",
     "keywords": [
       "telegram",
       "auto-filter",
-      "filter",
       "best",
       "indian",
       "pyrogram",
-      "media",
-      "search",
-      "channel",
-      "index",
-      "inline"
+      "bot"
     ],
-    "website": "https://github.com/JOSProjects/IMDb-Movie-Bot",
-    "repository": "https://github.com/JOSProjects/IMDb-Movie-Bot",
+    "website": "https://github.com/Pr0fess0r99/LuciferFilter_RoboT",
+    "repository": "https://github.com/Pr0fess0r99/LuciferFilter_RoboT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -75,7 +70,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "free"
+            "size": "eco"
         }
     }
 }
