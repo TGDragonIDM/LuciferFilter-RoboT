@@ -1,6 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
-from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM
+from LuciferFilter_Robot import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM
 from imdb import IMDb
 import asyncio
 from pyrogram.types import Message
@@ -32,6 +32,7 @@ START_CHAR = ('\'', '"', SMART_OPEN)
 class temp(object):
     BANNED_USERS = []
     BANNED_CHATS = []
+    PYRO_VERSION = "2.0.27"
     ME = None
     CURRENT=int(os.environ.get("SKIP", 2))
     CANCEL = False
