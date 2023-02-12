@@ -46,3 +46,4 @@ Here Is The Help For My Commands.</b>"""
 ID - <code>{}</code>
 Name - {}"""
 
+    CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
