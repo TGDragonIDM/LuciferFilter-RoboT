@@ -26,7 +26,7 @@
 class Script(object):
     START_TXT = """<b>👋 Hello {}..!
 
-It's Power Full <a href=https://t.me/{username}>{name}</a> Here 😎
+It's Power Full <a href='t.me/{username}'>{name}</a> Here 😎
 
 Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show..!</b>"""
 
