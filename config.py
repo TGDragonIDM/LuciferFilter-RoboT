@@ -26,7 +26,7 @@ ADMINS = environ.get("ADMINS", "")
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "TechProjectsChats")
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "")
 CHANNELS = [int(ch) if search.search(ch) else ch for ch in os.environ.get("CHANNELS", "0").split()]
-LOG_CHANNEL = environ.get("LOG_CHANNEL", "0")
+LOG_CHANNEL = environ.get("LOG_CHANNEL", "")
 AUTH_GROUPS = environ.get("AUTH_GROUPS", "")
 
 # MongoDB information
