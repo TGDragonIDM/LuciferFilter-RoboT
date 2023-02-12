@@ -20,7 +20,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in ADMINS.
 CHANNELS = CHANNELS
 AUTH_USERS = (AUTH_USERS + ADMINS) if AUTH_USERS else []
 AUTH_CHANNEL = int(AUTH_CHANNEL) if AUTH_CHANNEL and id_pattern.search(AUTH_CHANNEL) else None
-AUTH_GROUPS = [int(admin) for admin in AUTH_GROUPS.split()] if AUTH_GROUPS else None
+AUTH_GROUPS = [int(ch) for ch in AUTH_GROUPS.split()] if AUTH_GROUPS else None
 
 # MongoDB information
 DATABASE_URI = DATABASE_URI
