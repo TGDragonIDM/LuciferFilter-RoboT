@@ -1,7 +1,7 @@
 # MIT License
 # Copyright (c) 2023 BIKASH 
 from os import environ
-from config import ( is_enabled, search, API_ID, API_HASH, BOT_TOKEN, PICS, ADMINS, CHANNELS, AUTH_USERS, AUTH_CHANNEL, AUTH_GROUPS, DATABASE_URI, DATABASE_NAME, LOG_CHANNEL, SUPPORT_CHAT )
+from config import ( is_enabled, search, API_ID, API_HASH, BOT_TOKEN, PICS, ADMINS, CHANNELS, AUTH_USERS, AUTH_CHANNEL, AUTH_GROUPS, DATABASE_URI, DATABASE_NAME, LOG_CHANNEL, SUPPORT_CHAT, DELETE_CHANNELS )
 from translation import Script 
 
 # Bot information
@@ -27,6 +27,14 @@ DATABASE_NAME = DATABASE_NAME
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
+VERIFY = bool(environ.get('VERIFY', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '902284efd5e05828f51770d84f5ba26a6abf7751')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+DELETE_CHANNELS = [int(dch) if search.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+MAX_B_TN = environ.get("MAX_B_TN", "5")
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
+PORT = environ.get("PORT", "8080")
 LOG_CHANNEL = int(LOG_CHANNEL)
 SUPPORT_CHAT = SUPPORT_CHAT
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
