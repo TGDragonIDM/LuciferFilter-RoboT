@@ -1,5 +1,4 @@
 # MIT License
-
 # Copyright (c) 2023 BIKASH
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,3 +22,27 @@
 # Telegram Link : https://telegram.dog/TechProjectsUpdates 
 # Repo Link : https://github.com/Pr0fess0r99/LuciferFilter-RoboT
 # License Link : https://github.com/Pr0fess0r99/LuciferFilter-RoboT/blob/LuciferFilter-RoboT/LICENSE
+
+class Script(object):
+    START_TXT = """<b>👋 Hello {}..!
+
+It's Power Full <a href=https://t.me/{}>{} Here 😎
+
+Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show..!</b>"""
+
+    HELP_TXT = """<b>👋 Hello {},
+
+Here Is The Help For My Commands.</b>"""
+
+    ABOUT_TXT = """<b>➥ My Name:</b> {}
+<b>➥ Creator:</b> <a href='https://t.me/Pr0fess0r99'>PROFESSOR 99</a>
+<b>➥ Library:</b> <a href='https://docs.pyrogram.org/'>Pyrogram {pyro_version}</a>
+<b>➥ Language:</b> Python3 {py3_version}
+<b>➥ Data Base:</b> <a href='https://www.mongodb.com/'>MongoDB</a>
+<b>➥ Bot Server:</b> <a href='https://heroku.com'>Heroku</a>
+<b>➥ Build Status:</b> {version} [BETA]"""
+
+    LOG_TEXT_P = """#NewUser
+ID - <code>{}</code>
+Name - {}"""
+
