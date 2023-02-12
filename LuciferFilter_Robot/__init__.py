@@ -2,7 +2,6 @@
 # Copyright (c) 2023 BIKASH 
 from os import environ
 from config import ( is_enabled, search, API_ID, API_HASH, BOT_TOKEN, PICS, ADMINS, CHANNELS, AUTH_USERS, AUTH_CHANNEL, AUTH_GROUPS, DATABASE_URI, DATABASE_NAME, LOG_CHANNEL, SUPPORT_CHAT )
-from .translation import CUSTOM_FILE_CAPTION
 
 
 # Bot information
@@ -32,7 +31,7 @@ LOG_CHANNEL = int(LOG_CHANNEL)
 SUPPORT_CHAT = SUPPORT_CHAT
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(admin) for admin in (environ.get(FILE_STORE_CHANNEL)).split()]
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", CUSTOM_FILE_CAPTION)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
