@@ -11,7 +11,7 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.users_chats_db import db
 from database.ia_filterdb import Media
-from LuciferFilter_Robot import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR
+from LuciferFilter_Robot import API_ID, API_HASH, BOT_TOKEN
 from utils import temp
 
 class Bot(Client):
