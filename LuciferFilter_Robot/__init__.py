@@ -15,7 +15,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = PICS.split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in ADMINS.split()]
+ADMINS = [int(admin) if search.search(admin) else admin for admin in ADMINS.split()]
 CHANNELS = CHANNELS
 AUTH_USERS = (AUTH_USERS + ADMINS) if AUTH_USERS else []
 AUTH_CHANNEL = int(AUTH_CHANNEL) if AUTH_CHANNEL and id_pattern.search(AUTH_CHANNEL) else None
