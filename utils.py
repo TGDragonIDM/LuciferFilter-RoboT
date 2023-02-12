@@ -1,11 +1,12 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
-from LuciferFilter_Robot import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API
+from LuciferFilter_Robot import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, LOG_CHANNEL
 from imdb import Cinemagoer
 import asyncio
-from pyrogram.types import Message
+from pyrogram.types import Message, InlineKeyboardButton
 from typing import Union
 from pyrogram import enums
+from LuciferFilter_Robot.translation import Script 
 import re
 import os
 from datetime import datetime
