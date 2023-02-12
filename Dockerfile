@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /LuciferFilter-RoboT
-WORKDIR /LuciferFilter-RoboT
+RUN mkdir /Pr0fess0r99 
+WORKDIR /Pr0fess0r99 
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
