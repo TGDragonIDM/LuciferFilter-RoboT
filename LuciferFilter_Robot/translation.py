@@ -45,5 +45,3 @@ Here Is The Help For My Commands.</b>"""
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}"""
-
-    CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
