@@ -42,6 +42,30 @@ Here Is The Help For My Commands.</b>"""
 <b>➥ Bot Server:</b> <a href='https://heroku.com'>Heroku</a>
 <b>➥ Build Status:</b> v2.0.1 [BETA]"""
 
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}"""
+    SOURCE_TXT = """<b>Source:</b>
+
+{name} Is a Open Source Project.
+
+Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 👈</a>"""
+
+    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+
+<b>✍️ NOTE:</b>
+1. Make Me The Admin Of Your Channel Kf It's Private.
+2. Make Sure That Your Channel Does Not Contains Camrips, Porn and Fake Files.
+3. Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My DataBase."""
+
+    MANUALFILTER_TXT = """Help: <b>Manual Filter</b>
+
+- Filter Is The Feature Were Users Can Set Automated Replies For a Particular Keyword And Dingdi Will Respond Whenever a Keyword Is Found The Message 
+
+<b>Commands and Usage:</b>
+• /filter - Add a Filter In Chat.
+• /filters - List All The Filters Of a Chat.
+• /del - Delete a Specific Filter In Chat.
+• /delall - Delete The Whole Filters In a Chat(Chat Owner Only)."""
+
+    
+
+
+    
