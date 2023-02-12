@@ -28,6 +28,7 @@ AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "")
 CHANNELS = [int(ch) if search.search(ch) else ch for ch in environ.get("CHANNELS", "0").split()]
 LOG_CHANNEL = environ.get("LOG_CHANNEL", "")
 AUTH_GROUPS = environ.get("AUTH_GROUPS", "")
+AUTH_USERS = environ.get("AUTH_USERS", "")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
