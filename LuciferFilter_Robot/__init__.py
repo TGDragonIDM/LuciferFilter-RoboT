@@ -18,7 +18,7 @@ PICS = PICS.split()
 ADMINS = [int(admin) if search.search(admin) else admin for admin in ADMINS.split()]
 CHANNELS = CHANNELS
 AUTH_USERS = (AUTH_USERS + ADMINS) if AUTH_USERS else []
-AUTH_CHANNEL = int(AUTH_CHANNEL) if AUTH_CHANNEL and id_pattern.search(AUTH_CHANNEL) else None
+AUTH_CHANNEL = int(AUTH_CHANNEL) if AUTH_CHANNEL and search.search(AUTH_CHANNEL) else None
 AUTH_GROUPS = [int(ch) for ch in AUTH_GROUPS.split()] if AUTH_GROUPS else None
 
 # MongoDB information
