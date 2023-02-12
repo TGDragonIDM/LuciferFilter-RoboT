@@ -24,15 +24,15 @@
 # License Link : https://github.com/Pr0fess0r99/LuciferFilter-RoboT/blob/LuciferFilter-RoboT/LICENSE
 
 class Script(object):
-    START_TXT = """<b>👋 Hello {}..!
+    START_TXT = """<b>👋 Hello {}...!
 
 It's Power Full <a href='t.me/{username}'>{name}</a> Here 😎
 
-Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show..!</b>"""
+Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show...!</b>"""
 
-    HELP_TXT = """<b>👋 Hello {},
+    HELP_TXT = """<b>👋 Hello {}...!
 
-Here Is The Help For My Commands.</b>"""
+I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules...!</b>"""
 
     ABOUT_TXT = """<b>➥ My Name:</b> {name}
 <b>➥ Creator:</b> <a href='https://t.me/Pr0fess0r99'>PROFESSOR 99</a>
@@ -50,7 +50,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
-<b>✍️ NOTE:</b>
+<b>NOTE:</b>
 1. Make Me The Admin Of Your Channel Kf It's Private.
 2. Make Sure That Your Channel Does Not Contains Camrips, Porn and Fake Files.
 3. Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My DataBase."""
