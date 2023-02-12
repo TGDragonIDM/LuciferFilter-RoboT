@@ -37,8 +37,8 @@ class temp(object):
     CURRENT=int(os.environ.get("SKIP", 2))
     CANCEL = False
     MELCOW = {}
-    Bot_Username = [] # Username
-    Bot_Name = [] # Full Name
+    Bot_Username = None # Username
+    Bot_Name = "LuciferFilter" # Full Name
     SETTINGS = {}
 
 async def is_subscribed(bot, query):
