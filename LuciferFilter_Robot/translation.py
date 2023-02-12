@@ -26,7 +26,7 @@
 class Script(object):
     START_TXT = """<b>👋 Hello {}..!
 
-It's Power Full <a href=https://t.me/{}>{} Here 😎
+It's Power Full [{name}](t.me/{username}) Here 😎
 
 Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show..!</b>"""
 
@@ -34,7 +34,7 @@ Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show..!
 
 Here Is The Help For My Commands.</b>"""
 
-    ABOUT_TXT = """<b>➥ My Name:</b> {}
+    ABOUT_TXT = """<b>➥ My Name:</b> [{name}](t.me/{username})
 <b>➥ Creator:</b> <a href='https://t.me/Pr0fess0r99'>PROFESSOR 99</a>
 <b>➥ Library:</b> <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 <b>➥ Language:</b> Python3
