@@ -32,7 +32,7 @@ START_CHAR = ('\'', '"', SMART_OPEN)
 class temp(object):
     BANNED_USERS = []
     BANNED_CHATS = []
-    PYRO_VERSION = "2.0.27"
+    PYRO_VERSION = []
     ME = None
     CURRENT=int(os.environ.get("SKIP", 2))
     CANCEL = False
