@@ -2,7 +2,7 @@
 # Copyright (c) 2023 BIKASH 
 from os import environ
 from config import ( is_enabled, search, API_ID, API_HASH, BOT_TOKEN, PICS, ADMINS, CHANNELS, AUTH_USERS, AUTH_CHANNEL, AUTH_GROUPS, DATABASE_URI, DATABASE_NAME, LOG_CHANNEL, SUPPORT_CHAT )
-
+from LuciferFilter_Robot.translation import Script 
 
 # Bot information
 API_ID = API_ID
@@ -30,7 +30,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_CHANNEL = int(LOG_CHANNEL)
 SUPPORT_CHAT = SUPPORT_CHAT
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{Script.CUSTOM_FILE_CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
