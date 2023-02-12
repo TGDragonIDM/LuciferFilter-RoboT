@@ -37,10 +37,10 @@ Here Is The Help For My Commands.</b>"""
     ABOUT_TXT = """<b>➥ My Name:</b> {}
 <b>➥ Creator:</b> <a href='https://t.me/Pr0fess0r99'>PROFESSOR 99</a>
 <b>➥ Library:</b> <a href='https://docs.pyrogram.org/'>Pyrogram {pyro_version}</a>
-<b>➥ Language:</b> Python3 {py3_version}
+<b>➥ Language:</b> Python3
 <b>➥ Data Base:</b> <a href='https://www.mongodb.com/'>MongoDB</a>
 <b>➥ Bot Server:</b> <a href='https://heroku.com'>Heroku</a>
-<b>➥ Build Status:</b> {version} [BETA]"""
+<b>➥ Build Status:</b> v2.0.1 [BETA]"""
 
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
