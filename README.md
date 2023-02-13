@@ -47,8 +47,6 @@ Do Fork And Star The Repository If You Liked It.
 - [x] DB Stats
 - [x] Ban Users
 - [x] Unban Users
-- [x] Mute Users
-- [x] Unmute Users 
 - [x] Connections
 - [x] Pin Message
 - [x] Unpin Message 
@@ -57,7 +55,7 @@ Do Fork And Star The Repository If You Liked It.
 - [x] Custom File Caption 
 - [x] Chats Leave
 - [x] Chats Disable 
-- [x] DB Channels
+- [x] DB Channel List
 - [x] Chats List 
 - [x] Users List
 - [x] Bot PM Message 
@@ -65,7 +63,7 @@ Do Fork And Star The Repository If You Liked It.
 
 ## Variables
 
-Read this before you start messing up with your edits
+Read This Before You Start Messing Up With Your Edits
 
 ### Required Variables
 
