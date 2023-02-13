@@ -43,7 +43,7 @@ async def pm_text(bot, message):
     await message.reply_text("<b>Your Message Has Been Sent To My Moderator..!</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
-        text=f"<b>#PM_Message\n\nUser Name: {user}\n\nUser ID: {user_id}\n\nUser Messages: {content}</b>")
+        text=f"<b>#PM_MSG\n\nUser Name: {user}\n\nUser ID: {user_id}\n\nUser Messages: {content}</b>")
 
 
 @Client.on_callback_query(filters.regex(r"^next"))
