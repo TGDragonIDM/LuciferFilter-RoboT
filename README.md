@@ -20,7 +20,7 @@ Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH
 - Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
 - Thanks To [RSR](https://github.com/RSR-TG-Info)
 - Thanks To [Joelkb](https://github.com/Joelkb) 
-- Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) Who Have Edited And Modified This Repo As Now It Is. (It's ME 😂)
+- Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) Who Have Edited And Modified This Repo As Now It Is (It's ME 😂)
 
 ### Support
 
@@ -116,9 +116,9 @@ Read this before you start messing up with your edits
 </details>
 
 <details><summary>Deploy To Koyeb</summary>
-<b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
-
+<br>
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot)
+</a>
 </details>
 
 <details><summary>Deploy To Render</summary>
