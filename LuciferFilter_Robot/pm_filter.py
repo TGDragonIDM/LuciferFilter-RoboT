@@ -475,16 +475,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 if clicked == typed:
-                    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://t.me/{temp.Bot_Username}?start={ident}_{file_id}")
                     return
                 else:
-                    await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
+                    await query.answer(f"Hello 👋 {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
             elif settings['botpm']:
                 if clicked == typed:
-                    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://t.me/{temp.Bot_Username}?start={ident}_{file_id}")
                     return
                 else:
-                    await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
+                    await query.answer(f"Hello 👋 {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
             else:
                 if clicked == typed:
                     await client.send_cached_media(
@@ -492,34 +492,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup(
-                            [
-                             [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                           ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                             ]
-                            ]
-                        )
-                    )
+                        reply_markup=InlineKeyboardMarkup([[
+                       InlineKeyboardButton('🔗 Support', url='https://t.me/TechProjectsChats'),
+                       InlineKeyboardButton('Channel 📢', url='https://t.me/TechProjectsUpdates')
+                       ],[
+                       InlineKeyboardButton('❎ Close This File ❎', callback_data='close_data')]]))
                 else:
-                    await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
-                await query.answer('Cʜᴇᴄᴋ PM, I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ PM', show_alert=True)
+                    await query.answer(f"Hello 👋 {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
+                await query.answer('Check Bot PM, I Have Sent Your Files In PM 📥', show_alert=True)
         except UserIsBlocked:
-            await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
+            await query.answer('Unblock the bot mahn..!', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://t.me/{temp.Bot_Username}?start={ident}_{file_id}")
         except Exception as e:
-            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://t.me/{temp.Bot_Username}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart..! 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪsᴛ.')
+            return await query.answer('No such file exist.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -540,52 +534,43 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                 ]
-                ]
-            )
-        )
+            reply_markup=InlineKeyboardMarkup([[
+                       InlineKeyboardButton('🔗 Support', url='https://t.me/TechProjectsChats'),
+                       InlineKeyboardButton('Channel 📢', url='https://t.me/TechProjectsUpdates')
+                       ],[
+                       InlineKeyboardButton('❎ Close This File ❎', callback_data='close_data')]]))
+
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add me to your Chat ➕', url=f'http://t.me/{temp.Bot_Username}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Chat ➕', url=f'http://t.me/{temp.Bot_Username}?startgroup=true')
             ],[
-            InlineKeyboardButton('⭕️ Help', callback_data='help'),
-            InlineKeyboardButton('About ⭕️', callback_data='about')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('About 😎', callback_data='about')
             ],[
-            InlineKeyboardButton('🕵️ Search here Movie 🕵️', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🕵️ Search Movie Here 🕵️', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('⭕️ Updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('Movie Club ⭕️', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/TechProjectsUpdates'),
+            InlineKeyboardButton('Support 🔗', url='https://t.me/TechProjectsChats')
             ],[
-            InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
+            InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.START_TXT.format(query.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Connect', callback_data='coct'),
+            InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
             InlineKeyboardButton('G-Trans', callback_data='gtrans'),
             ],[
             InlineKeyboardButton('Info', callback_data='info'),
-            InlineKeyboardButton('Inline', callback_data='inline'),
-            InlineKeyboardButton('Memes', callback_data='memes'),
-            ],[
-            InlineKeyboardButton('Paste', callback_data='paste'),
             InlineKeyboardButton('Pin', callback_data='pin'),
             InlineKeyboardButton('Purge', callback_data='purge'),
             ],[
@@ -593,30 +578,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Search', callback_data='search'),
             InlineKeyboardButton('Sudo', callback_data='admin'),
             ],[
-            InlineKeyboardButton('Share-Text', callback_data='sharetext'),
-            InlineKeyboardButton('TTS', callback_data='tts'),
-            InlineKeyboardButton('Torrent', callback_data='torrent'),
-            ],[
-            InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music'),
-            ],[
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Adult Bot 🔞', url='https://t.me/AdultSearchXBot')
+            InlineKeyboardButton('T-Graph', callback_data='tgraph'),
+            InlineKeyboardButton('Back', callback_data='start'),
+            InlineKeyboardButton('Close', callback_data='close_data'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('⭕ Status', url='https://t.me/josprojects/221'),
-            InlineKeyboardButton('Source 🪤', callback_data='source')
+            InlineKeyboardButton('Status', callback_data='stats'),
+            InlineKeyboardButton('Source Code', callback_data='source')
             ],[
-            InlineKeyboardButton('❓ How to Use ❓', callback_data='help')
+            InlineKeyboardButton('How to Use', callback_data='help')
             ],[
             InlineKeyboardButton('« Back', callback_data='start'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
@@ -626,19 +603,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.ABOUT_TXT.format(name=temp.Bot_Name, username=temp.Bot_Username),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "torrent":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.TORRENT_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "source":
         buttons = [[
@@ -649,7 +614,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.SOURCE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "manualfilter":
         buttons = [[
@@ -663,7 +628,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.MANUALFILTER_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "button":
         buttons = [[
@@ -674,7 +639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.BUTTON_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "autofilter":
         buttons = [[
@@ -685,12 +650,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.AUTOFILTER_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "auto_manual":
         buttons = [[
-            InlineKeyboardButton('auto', callback_data='autofilter'),
-            InlineKeyboardButton('manual', callback_data='manualfilter')
+            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
+            InlineKeyboardButton('Manual Filter', callback_data='manualfilter')
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
@@ -700,7 +665,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.AUTO_MANUAL_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "coct":
         buttons = [[
@@ -711,7 +676,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.CONNECTION_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "paste":
         buttons = [[
@@ -723,7 +688,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.PASTE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "tgraph":
         buttons = [[
@@ -734,7 +699,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.TGRAPH_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "info":
         buttons = [[
@@ -745,7 +710,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.INFO_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "search":
         buttons = [[
@@ -756,19 +721,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.SEARCH_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "gtrans":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help'),
-            InlineKeyboardButton('lang codes', url='https://cloud.google.com/translate/docs/languages')
+            InlineKeyboardButton('Lang Codes', url='https://cloud.google.com/translate/docs/languages')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.GTRANS_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "admin":
         buttons = [[
@@ -779,18 +744,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.ADMIN_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "zombies":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.ZOMBIES_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "purge":
         buttons = [[
@@ -801,7 +755,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.PURGE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "restric":
         buttons = [[
@@ -812,40 +766,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.RESTRIC_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "memes":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.MEMES_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "shortner":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.URL_SHORTNER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "tts":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.TTS_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "pin":
         buttons = [[
@@ -856,40 +777,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.PIN_MESSAGE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "music":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.MUSIC_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "genpassword":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.PASSWORD_GEN_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "sharetext":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.SHARE_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "fillings":
         buttons = [[
@@ -900,7 +788,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.FILLINGS_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "stats":
         buttons = [[
@@ -918,7 +806,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=Script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
