@@ -2,7 +2,7 @@
 # Copyright (c) 2023 BIKASH 
 from os import environ
 from config import ( is_enabled, search, API_ID, API_HASH, BOT_TOKEN, PICS, ADMINS, CHANNELS, AUTH_USERS, AUTH_CHANNEL, AUTH_GROUPS, DATABASE_URI, DATABASE_NAME, LOG_CHANNEL, SUPPORT_CHAT, DELETE_CHANNELS )
-from translation import Script 
+from LuciferFilter_Robot.translation import Script 
 
 # Bot information
 API_ID = API_ID
