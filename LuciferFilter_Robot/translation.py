@@ -64,7 +64,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • /del - Delete a Specific Filter In Chat.
 • /delall - Delete The Whole Filters In a Chat(Chat Owner Only)."""
 
-   BUTTON_TXT = """Help: <b>Buttons</b>
+    BUTTON_TXT = """Help: <b>Buttons</b>
 
 - {name} Support Both Url And Alert Inline Buttons.
 
@@ -78,7 +78,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
 
-   FILLINGS_TXT = """Help: <b>Fillings</b>
+    FILLINGS_TXT = """Help: <b>Fillings</b>
 
 - You Can Also Customize The Contents Of Your Message With Contextual Data. For Example, You Could Mention a User By Name In The Filter Message, Or Mention Them In a Filter.
 
@@ -94,7 +94,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 
 <b>Example:</b> <code>/filter Test Hello {mention} This Is Your Username : {username} And This Is Your ID : {id}</code>"""
 
-   CONNECTION_TXT = """Help: <b>Group Connections</b>
+    CONNECTION_TXT = """Help: <b>Group Connections</b>
 
 - Used To Connect Bot To PM For Managing Filters. 
 - It Helps To Avoid Spamming In Groups.
@@ -108,11 +108,11 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • /disconnect  - Disconnect From a chyat.
 • /connections - List All Your Connections."""
 
-   AUTO_MANUAL_TXT = """Help: <b>Filters</b>
+    AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
 <b>Select a Filters Type Bellow.</b>"""
   
-   TGRAPH_TXT = """Help: <b>TGraph</b>
+    TGRAPH_TXT = """Help: <b>TGraph</b>
 
 - Do As You Wish With Telegra.ph Module..!
 
@@ -124,7 +124,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works On Both PM And Group.
 • These Commands Can Be Used By Any Member."""
 
-   INFO_TXT = """Help: <b>Information</b>
+    INFO_TXT = """Help: <b>Information</b>
 
 - Get Information About Something..!
 
@@ -138,7 +138,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works On Both PM And Group.
 • These Commands Can Be Used By Any Member."""
 
-   GTRANS_TXT = """Help: <b>Google Translator</b>
+    GTRANS_TXT = """Help: <b>Google Translator</b>
 
 - Translate Texts To a Specific Language..!
 
@@ -150,7 +150,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works On Both PM And Group.
 • {name} Can Translate Texts To 200+ Languages."""
 
-   SEARCH_TXT = """Help: <b>IMDB</b>
+    SEARCH_TXT = """Help: <b>IMDB</b>
 
 - Search Many Things Without Leaving Telegram..!
 
@@ -163,7 +163,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • More Search Tools Can Be Found On Inline.
 • These Commands Works On Both PM And Group."""
 
-   PURGE_TXT = """Help: <b>Purge</b>
+    PURGE_TXT = """Help: <b>Purge</b>
 
 - You Need To Delete Lots Of Messages..? That's What Purges Are For..!
 
@@ -175,7 +175,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works On Group.
 • These Commands Can Be Used By Admin Only."""
 
-   RESTRIC_TXT = """Help: <b>Restrictions</b>
+    RESTRIC_TXT = """Help: <b>Restrictions</b>
 
 - Some People Need To Be Publicly Banned Spammers, Annoyances Or Just Trolls.
 - This Module Allows You To Do That Easily, By Exposing Some Common Actions, So Everyone Will See..!
@@ -196,7 +196,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works On Group.
 • These Commands Can Be Used By Admin Only."""
 
-   PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
+    PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
 
 - All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With a Simple Pinned Message..!
 
@@ -209,7 +209,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • These Commands Works Only Group.
 • These Commands Can Be Used By Admin Only."""
 
-    ADMIN_TXT = """Help: <b>Admin Mods</b>
+     ADMIN_TXT = """Help: <b>Admin Mods</b>
 
 <b>NOTE:</b>
 • This Module Only Works For My Admins 
@@ -227,41 +227,41 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • /channel - To Get List Of Total Connected Channels.
 • /broadcast - To Broadcast a Message To All Users."""
 
-   STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
+    STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
 <b>Total Chats:</b> <code>{}</code>
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-   FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
+    FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
 
 __🗣 In Order To Get The Movie Requested By You In Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
 
 **👇 SUBSCRIBE CHANNEL & TRY AGAIN 👇**"""
    
-   CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
+    CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
 
-   LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}"""
 
-   LOG_TEXT_P = """#NewUser
+    LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}"""
 
-   CREATOR_REQUIRED = """You Have To Be The Group Creator To Do That❗"""
+    CREATOR_REQUIRED = """You Have To Be The Group Creator To Do That❗"""
       
-   INPUT_REQUIRED = "**Arguments Required❗**"
+    INPUT_REQUIRED = "**Arguments Required❗**"
       
-   KICKED = """Successfully Kicked {} Members According To The Arguments Provided ☑️"""
+    KICKED = """Successfully Kicked {} Members According To The Arguments Provided ☑️"""
       
-   START_KICK = """Removing Inactive Members This May Take a While 🚮"""
+    START_KICK = """Removing Inactive Members This May Take a While 🚮"""
       
-   ADMIN_REQUIRED = """I Am Not An Admin Here\n__Leaving This Chat, Add Me Again As Admin With Ban User Permission."""
+    ADMIN_REQUIRED = """I Am Not An Admin Here\n__Leaving This Chat, Add Me Again As Admin With Ban User Permission."""
       
-   DKICK = """Kicked {} Deleted Accounts Successfully ☑️"""
+    DKICK = """Kicked {} Deleted Accounts Successfully ☑️"""
       
-   FETCHING_INFO = """Collecting Users Information"""
+    FETCHING_INFO = """Collecting Users Information"""
       
-   STATUS = """{}\nChat Member Status**\n\n```recently``` - {}\n```within_week``` - {}\n```within_month``` - {}\n```long_time_ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}"""
+    STATUS = """{}\nChat Member Status**\n\n```recently``` - {}\n```within_week``` - {}\n```within_month``` - {}\n```long_time_ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}"""
