@@ -2,10 +2,6 @@
   <img src="https://graph.org/file/a6f99f5b71a20468b3180.jpg" alt="LuciferFilter-RoboT Logo">
 </p>
 <h1 align="center">
-  LuciferFilter-RoboT 
-</h1>
-
-<h1 align="center">
 <a href="https://telegram.dog/LuciferFilter_Robot">LuciferFilter-RoboT</a>
 </h1>
 
@@ -121,10 +117,9 @@ Read this before you start messing up with your edits
 </details>
 
 <details><summary>Deploy To Koyeb</summary>
-<p>
 <br>
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot)
-</p>
+</br>
 </details>
 
 <details><summary>Deploy To Render</summary>
