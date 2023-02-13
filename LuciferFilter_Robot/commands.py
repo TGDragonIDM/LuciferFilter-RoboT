@@ -2,7 +2,7 @@ import os
 import logging
 import random
 import asyncio
-from translation import Script
+from LuciferFilter_Robot.translation import Script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
