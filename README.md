@@ -42,7 +42,7 @@ Do Fork And Star The Repository If You Liked It.
 - [x] Inline Search
 - [x] Random Pics
 - [x] IDs And User Info
-- [x] DB Stats, Users, Chats
+- [x] DB Stats
 - [x] Ban Users
 - [x] Unban Users
 - [x] Mute Users
