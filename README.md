@@ -118,8 +118,9 @@ Read this before you start messing up with your edits
 
 <details><summary>Deploy To Koyeb</summary>
 <br>
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot)
-</br>
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot">
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy To Koyeb">
+</a>
 </details>
 
 <details><summary>Deploy To Render</summary>
