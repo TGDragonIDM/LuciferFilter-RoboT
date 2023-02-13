@@ -19,7 +19,8 @@ Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH
 
 - Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
 - Thanks To [RSR](https://github.com/RSR-TG-Info)
-- Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) (It's ME)
+- Thanks To [Joelkb](https://github.com/Joelkb) 
+- Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) Who Have Edited And Modified This Repo As Now It Is. (It's ME 😂)
 
 ### Support
 
@@ -105,13 +106,41 @@ Read this before you start messing up with your edits
 
 ### Deployment Support Sites 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Pr0fess0r99/LuciferFilter-RoboT)
-
-<details><summary>Deploy To Railway</summary>
+<details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://railway.app?referralCode=Pr0fess0r99">
-  <img src="https://railway.app/button.svg" alt="Deploy">
+<a href="https://heroku.com/deploy?template=https://github.com/Joelkb/DQ-the-file-donor">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
 </details>
+
+<details><summary>Deploy To Koyeb</summary>
+<b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot)
+</details>
+
+<details><summary>Deploy To Render</summary>
+<br>
+<a href="https://render.com/deploy?repo=https://github.com/Pr0fess0r99/LuciferFilter-RoboT/tree/web">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
+</details>
+
+<details><summary>Deploy To VPS</summary>
+<p>
+<pre>
+git clone https://github.com/Pr0fess0r99/LuciferFilter-RoboT 
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit config.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
+
+## Inspiration
+This is an attempt to create a clone of a BOAT made out of [banana trees 🌳](https://telegram.dog/GetTGLink/4187)
+
+[![For Vaza](https://telegra.ph/file/e743b0c8a04252774bac2.jpg)](https://telegra.ph/file/98342dc186fd7484cba91.mp4 "Oru Kootam Vazhakalk samarpikkunnu")
