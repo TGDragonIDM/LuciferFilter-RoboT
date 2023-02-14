@@ -811,7 +811,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         settings = await get_settings(grpid)
 
-            await save_group_settings(grpid, set_type, True)
+        await save_group_settings(grpid, set_type, True)
 
         settings = await get_settings(grpid)
 
