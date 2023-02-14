@@ -59,7 +59,6 @@ Do Fork And Star The Repository If You Liked It.
 - [x] Chats List 
 - [x] Users List
 - [x] Bot PM Message 
-- [x] Shortlink Support 
 
 ## Variables
 
