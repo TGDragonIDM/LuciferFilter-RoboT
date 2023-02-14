@@ -102,7 +102,7 @@ Read This Before You Start Messing Up With Your Edits
 
 • `FILE_STORE_CHANNEL` : Channel from were file store links of posts should be made. Separate multiple IDs by space
 
-#### Admin Commands 
+## Admin Commands 
 
 ```
 • /alive - Check I'm Alive Or Not(All Users)
@@ -115,11 +115,11 @@ Read This Before You Start Messing Up With Your Edits
 * /disconnect - Disconnect From PM
 * /del - Delete a Filter
 * /delall - Delete All Filters
-* /deleteall - Delete All Index Files(autofilter)
+* /deleteall - Delete All Index Files(Autofilter)
 * /delete - Delete a Specific File From Index.
 * /batch - To Create Link For Multiple Posts
 * /link - To Create Link For One Post
-* /info - Get User Info(all Users)
+* /info - Get User Info(All Users)
 * /id - Get TG Ids.(All Users)
 * /imdb - Fetch Info From IMDB Source.(All Users)
 • /users - To Get List Of My Users And Ids.
@@ -134,7 +134,7 @@ Read This Before You Start Messing Up With Your Edits
 • /broadcast - To Broadcast a Message To All Users
 ```
 
-##### Deployment Support Sites 
+## Deployment Support Sites 
 
 <details><summary>Deploy To Heroku</summary>
 <p>
