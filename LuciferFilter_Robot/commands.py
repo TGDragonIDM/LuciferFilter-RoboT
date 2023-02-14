@@ -31,8 +31,8 @@ async def start(client, message):
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.send_sticker(chat_id=message.chat.id, sticker='', reply_markup=reply_markup, reply_to_message_id=message.id)
-        await asyncio.sleep(60)
+        await client.send_sticker(chat_id=message.chat.id, sticker='CAACAgUAAxkBAALV7GPrs1BH30-F3kybHQRyNUYtItLhAAKvBAACbbEhVhQ7ygvKG0ifHgQ', reply_markup=reply_markup, reply_to_message_id=message.id)
+        await asyncio.sleep(20)
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
