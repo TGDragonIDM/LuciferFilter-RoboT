@@ -86,7 +86,7 @@ Read This Before You Start Messing Up With Your Edits
 
 • `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel
 
-#### Optional Variables
+### Optional Variables
 
 • `AUTH_USERS` : Username or ID of users to give access of inline search & pm filter. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.
 
@@ -102,7 +102,39 @@ Read This Before You Start Messing Up With Your Edits
 
 • `FILE_STORE_CHANNEL` : Channel from were file store links of posts should be made. Separate multiple IDs by space
 
-### Deployment Support Sites 
+#### Admin Commands 
+
+```
+• /alive - Check I'm Alive Or Not(All Users)
+• /ping - Pong(All Users)
+• /logs - To Get The Rescent Errors
+• /stats - To Get Status Of Files In DataBase.(All Users)
+* /filter - Add Manual Filters
+* /filters - View Filters
+* /connect - Connect To PM.
+* /disconnect - Disconnect From PM
+* /del - Delete a Filter
+* /delall - Delete All Filters
+* /deleteall - Delete All Index Files(autofilter)
+* /delete - Delete a Specific File From Index.
+* /batch - To Create Link For Multiple Posts
+* /link - To Create Link For One Post
+* /info - Get User Info(all Users)
+* /id - Get TG Ids.(All Users)
+* /imdb - Fetch Info From IMDB Source.(All Users)
+• /users - To Get List Of My Users And Ids.
+• /chats - To Get List Of The My Chats And Ids 
+• /index - To Add Files From a Channel
+• /leave - To Leave From a Chat.
+• /disable - To Disable a Chat.
+* /enable - Re-Enable Chat.
+• /ban_users - To Ban a User.
+• /unban_users - To Unban a User.
+• /channel - To Get List Of Total Connected Channels
+• /broadcast - To Broadcast a Message To All Users
+```
+
+##### Deployment Support Sites 
 
 <details><summary>Deploy To Heroku</summary>
 <p>
