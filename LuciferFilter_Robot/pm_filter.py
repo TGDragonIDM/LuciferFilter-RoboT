@@ -896,14 +896,14 @@ async def auto_filter(client, msg, spoll=False):
         ENABLE_SHORTLINK = False
     pre = 'filep' if settings['file_secure'] else 'file'
     if ENABLE_SHORTLINK == True:
-        if settings["button"]:
-        btn = [
-            [
-                InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)} {file.file_name}", callback_data=f'{pre}#{file.file_id}'
-                ),
-            ]
-            for file in files
+        if settings['button']:
+            btn = [
+                [
+                    InlineKeyboardButton(
+                        text=f"{get_size(file.file_size)} {file.file_name}", callback_data=f'files#{file.file_id}'
+                    ),
+                ]
+                for file in files
             ]
         else:
             btn = [
