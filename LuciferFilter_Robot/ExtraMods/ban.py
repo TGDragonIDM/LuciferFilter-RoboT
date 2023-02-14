@@ -15,9 +15,9 @@ async def ban_user(_, message):
         await message.reply_text(str(error))                    
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Someone else is dusting off..! \n{user_first_name} \nIs forbidden.")                              
+            await message.reply_text(f"Someone Else Is Dusting Off..! \n{user_first_name} \nIs forbidden.")                              
         else:
-            await message.reply_text(f"Someone else is dusting off..! \n<a href='tg://user?id={user_id}'>{user_first_name}</a> Is forbidden")                      
+            await message.reply_text(f"Someone Else Is Dusting Off..! \n<a href='tg://user?id={user_id}'>{user_first_name}</a> Is forbidden")                      
             
 
 @Client.on_message(filters.command("tban"))
@@ -30,15 +30,15 @@ async def temp_ban_user(_, message):
     user_id, user_first_name = extract_user(message)
     until_date_val = extract_time(message.command[1])
     if until_date_val is None:
-        return await message.reply_text(text=f"Invalid time type specified. \nExpected m, h, or d, Got it: {message.command[1][-1]}")   
+        return await message.reply_text(text=f"Invalid Time Type Specified.\n\nExpected m, h, or d, Got it: {message.command[1][-1]}")   
     try:
         await message.chat.ban_member(user_id=user_id, until_date=until_date_val)            
     except Exception as error:
         await message.reply_text(str(error))
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Someone else is dusting off..!\n{user_first_name}\nbanned for {message.command[1]}!")
+            await message.reply_text(f"Someone Else Is Dusting Off..!\n{user_first_name}\nBanned For {message.command[1]}!")
         else:
-            await message.reply_text(f"Someone else is dusting off..!\n<a href='tg://user?id={user_id}'>Lavane</a>\n banned for {message.command[1]}!")
+            await message.reply_text(f"Someone Else Is Dusting Off..!\n<a href='tg://user?id={user_id}'>Lavane</a>\n Banned For {message.command[1]}!")
                 
 
