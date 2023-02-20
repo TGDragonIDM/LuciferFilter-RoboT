@@ -117,7 +117,7 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 - Do As You Wish With Telegra.ph Module..!
 
 <b>Commands and Usage:</b>
-• /tgmedia or /tgraph - Upload Supported Media (Within 5MB) To Telegraph.
+• /telegraph and /tgmedia or /tgraph - Upload Supported Media (Within 5MB) To Telegraph.
 
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
@@ -226,6 +226,38 @@ Source: <a href='https://github.com/Pr0fess0r99/LuciferFilter-RoboT'>Click Here 
 • /unban_users - To Unban a User.
 • /channel - To Get List Of Total Connected Channels.
 • /broadcast - To Broadcast a Message To All Users."""
+ 
+    WHO_TXT = """Hello 👋 {},
+I Can't Write Everything In My Bio So I Created This...
+
+╭──[─═ ᴘᴇʀꜱᴏɴᴀʟ ɪɴꜰᴏ ═─]
+├• Name⇝ Bikash Maity 
+├• Gender⇝ What Do You Think
+├• TG Name⇝ PR0FESS0R 99 
+├• Username⇝ @Pr0fess0r99
+├• Birthday⇝ 10th January 2006
+├• Age⇝ 17
+├• Relationship Status⇝ Single
+├• Nationality⇝ Indian
+├• Location⇝ West Bengal, India, Manikpur 
+├• Contact Bot⇝ Soon... 🤖
+╰──────⍟───────╯
+
+Thank You For Reading Patiently 🙏"""
+
+
+    DONATE_TXT = """Hello 👋 {},
+
+Thank You For Showing Interest In My Works 🙏
+
+To Support My Works, Please Feel Free To Donate Any Amount You Like 💸
+
+There Are Multiple Ways To Donate By UPI ID
+
+UPI 🆔 Details
+
+Google pay 📲 joynathnet4@oksbi
+Phonepe 📲 bijoy.nath@ybl"""
 
     STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
