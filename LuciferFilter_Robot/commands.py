@@ -50,8 +50,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🕵️ Search Movie Here 🕵️', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TechProjectsUpdates'),
-            InlineKeyboardButton('Support 🔗', url='https://t.me/TechProjectsChats')
+            InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
+            InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
@@ -101,8 +101,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🕵️ Search Movie Here 🕵️', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TechProjectsUpdates'),
-            InlineKeyboardButton('Support 🔗', url='https://t.me/TechProjectsChats')
+            InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
+            InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
