@@ -383,11 +383,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [
-            [
-                InlineKeyboardButton('🔗 Support', url='https://t.me/TechProjectsChats'),
-                InlineKeyboardButton('Channel 📢', url='https://t.me/TechProjectsUpdates')
-            ],
-            [
+            [               
                 InlineKeyboardButton('❎ Close This File ❎', callback_data='close_data')
             ]
             ]
@@ -438,11 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [
-            [
-                InlineKeyboardButton('🔗 Support', url='https://t.me/TechProjectsChats'),
-                InlineKeyboardButton('Channel 📢', url='https://t.me/TechProjectsUpdates')
-            ],
-            [
+            [                
                 InlineKeyboardButton('❎ Close This File ❎', callback_data='close_data')
             ]
             ]
@@ -457,8 +449,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🕵️ Search Movie Here 🕵️', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TechProjectsUpdates'),
-            InlineKeyboardButton('Support 🔗', url='https://t.me/TechProjectsChats')
+            InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
+            InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
@@ -614,7 +606,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=Script.SEARCH_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
-            reply_markup=reply_markup,
+            reply_markup=reply_markup, 
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "gtrans":
@@ -680,6 +672,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.FILLINGS_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "who":
+        buttons = [[
+            InlineKeyboardButton('« Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.WHO_TXT.format(name=temp.Bot_Name),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "donate":
+        buttons = [[
+            InlineKeyboardButton('« Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.DONATE_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
