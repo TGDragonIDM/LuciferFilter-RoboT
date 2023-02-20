@@ -4,8 +4,8 @@ from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from LuciferFilter_Robot import ADMINS
-from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
-from LuciferFilter_Robot.ia_filterdb import save_file
+from LuciferFilter_Robot import INDEX_REQ_CHANNEL as LOG_CHANNEL
+from database.ia_filterdb import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from utils import temp
 import re
