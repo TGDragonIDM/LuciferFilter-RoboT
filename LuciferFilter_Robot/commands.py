@@ -56,6 +56,10 @@ async def start(client, message):
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        m=await message.reply_sticker("CAACAgUAAxkBAALcOWPznaZGo3pAExzwqweL-St8wP0qAAIVAQACyJRkFGZEMKKnFWwTHgQ")
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=Script.START_TXT.format(message.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username),
@@ -107,6 +111,10 @@ async def start(client, message):
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        m=await message.reply_sticker("CAACAgUAAxkBAALcOWPznaZGo3pAExzwqweL-St8wP0qAAIVAQACyJRkFGZEMKKnFWwTHgQ")
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=Script.START_TXT.format(message.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username),
