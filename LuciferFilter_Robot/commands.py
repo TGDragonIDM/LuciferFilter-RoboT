@@ -252,11 +252,7 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [
-        [
-            InlineKeyboardButton('🔗 Support', url='https://t.me/TechProjectsChats'),
-            InlineKeyboardButton('Channel 📢', url='https://t.me/TechProjectsUpdates')
-        ],
-        [
+        [ 
             InlineKeyboardButton('❎ Close This File ❎', callback_data='close_data')
         ]
         ]
