@@ -27,7 +27,9 @@ class Script(object):
 
 It's Power Full <a href='t.me/{username}'>{name}</a> Here 😎
 
-Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show.</b>"""
+Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show 😉
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     HELP_TXT = """<b>👋 Hello {},
 
