@@ -477,6 +477,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Sudo', callback_data='admin'),
             ],[
             InlineKeyboardButton('T-Graph', callback_data='tgraph'),
+            InlineKeyboardButton('Song', callback_data='song'),
+            InlineKeyboardButton('Font', callback_data='font'),
+            ],[
             InlineKeyboardButton('Back', callback_data='start'),
             InlineKeyboardButton('Close', callback_data='close_data'),
         ]]
@@ -486,34 +489,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('Status', callback_data='stats'),
-            InlineKeyboardButton('Source Code', callback_data='source')
-            ],[
-            InlineKeyboardButton('How to Use', callback_data='help')
-            ],[
-            InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.ABOUT_TXT.format(name=temp.Bot_Name, username=temp.Bot_Username),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.SOURCE_TXT.format(name=temp.Bot_Name),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    elif "about" in query.data:
+        return await query.answer("""
+꧁֍Lᴜᴄɪғᴇʀ Fɪʟᴛᴇʀ Bᴏᴛ֍꧂
+
+ツ Creator: PR0FESS0R 99
+❖ Language: Python3
+❖ Hosted: Heroku
+❖ Version: 10.0
+❖ Farmework: Pyrogram
+❖ Database: MongoDB
+֎ Bot: Indian 🇮🇳
+""", show_alert=True)
+
     elif query.data == "manualfilter":
         buttons = [[
             InlineKeyboardButton('Buttons', callback_data='button'),
@@ -678,7 +666,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "who":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
+            InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -689,7 +677,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "donate":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
+            InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -698,24 +686,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "stats":
+    elif query.data == "song":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about'),
-            InlineKeyboardButton('Refresh ⧖', callback_data='rfrsh')
+            InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
         await query.message.edit_text(
-            text=Script.STATUS_TXT.format(total, users, chats, monsize, free),
+            text=Script.SONG_TXT.format(query.from_user.mention),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "font":
+        buttons = [[
+            InlineKeyboardButton('« Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.FONT_TXT.format(query.from_user.mention),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )   
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
