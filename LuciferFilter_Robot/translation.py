@@ -43,7 +43,18 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 • /filter - Add a Filter In Chat.
 • /filters - List All The Filters Of a Chat.
 • /del - Delete a Specific Filter In Chat.
-• /delall - Delete The Whole Filters In a Chat(Chat Owner Only)."""
+• /delall - Delete The Whole Filters In a Chat(Chat Owner Only).
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+
+    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+
+<b>NOTE:</b>
+1. Make Me The Admin Of Your Channel If It's Private.
+2. Make Sure That Your Channel Does Not Contains Camrips, Porn And Fake Files.
+3. Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My DataBase.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
@@ -57,7 +68,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>URL Buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/xxxxxxxxxxxxx)</code>
 <b>Alert Buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+<code>[Button Text](buttonalert:This is an alert message)</code>
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     FILLINGS_TXT = """Help: <b>Fillings</b>
 
@@ -73,7 +86,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 - <code>{chatname}</code>: The chat's name.
 - <code>{query}</code>: Any Replied Message.
 
-<b>Example:</b> <code>/filter Test Hello {mention} This Is Your Username : {username} And This Is Your ID : {id}</code>"""
+<b>Example:</b> <code>/filter Test Hello {mention} This Is Your Username : {username} And This Is Your ID : {id}</code>
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     CONNECTION_TXT = """Help: <b>Group Connections</b>
 
@@ -87,7 +102,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>Commands and Usage:</b>
 • /connect  - Connect a Particular Chat To Your PM.
 • /disconnect  - Disconnect From a chyat.
-• /connections - List All Your Connections."""
+• /connections - List All Your Connections.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
@@ -103,7 +120,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works On Both PM And Group.
-• These Commands Can Be Used By Any Member."""
+• These Commands Can Be Used By Any Member.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     INFO_TXT = """Help: <b>Information</b>
 
@@ -117,7 +136,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works On Both PM And Group.
-• These Commands Can Be Used By Any Member."""
+• These Commands Can Be Used By Any Member.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     GTRANS_TXT = """Help: <b>Google Translator</b>
 
@@ -129,7 +150,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works On Both PM And Group.
-• {name} Can Translate Texts To 200+ Languages."""
+• {name} Can Translate Texts To 200+ Languages.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     SEARCH_TXT = """Help: <b>IMDB</b>
 
@@ -142,7 +165,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • More Search Tools Can Be Found On Inline.
-• These Commands Works On Both PM And Group."""
+• These Commands Works On Both PM And Group.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     PURGE_TXT = """Help: <b>Purge</b>
 
@@ -154,7 +179,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works On Group.
-• These Commands Can Be Used By Admin Only."""
+• These Commands Can Be Used By Admin Only.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     RESTRIC_TXT = """Help: <b>Restrictions</b>
 
@@ -175,7 +202,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works On Group.
-• These Commands Can Be Used By Admin Only."""
+• These Commands Can Be Used By Admin Only.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
 
@@ -188,7 +217,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 <b>NOTE:</b>
 • {name} Should Have Admin Privillage.
 • These Commands Works Only Group.
-• These Commands Can Be Used By Admin Only."""
+• These Commands Can Be Used By Admin Only.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     ADMIN_TXT = """Help: <b>Admin Mods</b>
 
@@ -206,7 +237,9 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 • /ban_users - To Ban a User.
 • /unban_users - To Unban a User.
 • /channel - To Get List Of Total Connected Channels.
-• /broadcast - To Broadcast a Message To All Users."""
+• /broadcast - To Broadcast a Message To All Users.
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
  
     WHO_TXT = """Hello 👋 {},
 I Can't Write Everything In My Bio So I Created This...
@@ -245,14 +278,18 @@ Thank You For Showing Interest In My Works 🙏"""
 - Download Music Via Link, For Those Who Love Music
 
 <b>Commands and Usage:</b>
-• /song [Song Name] or /song [YouTube Link] - To Download Music"""
+• /song [Song Name] or /song [YouTube Link] - To Download Music
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
   
     FONT_TXT = """Help: <b>Stylish Font</b>
 
 - Generate Stylish Text With Your Own Writing
 
 <b>Commands and Usage:</b>
-• /font [Text] - Generate Your Stylish Text"""
+• /font [Text] - Generate Your Stylish Text
+
+Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
     STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
