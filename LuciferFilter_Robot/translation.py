@@ -303,7 +303,21 @@ __🗣 In Order To Get The Movie Requested By You In Our Groups, You Will Have T
 
 **👇 SUBSCRIBE CHANNEL & TRY AGAIN 👇**"""
    
-    CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""
+    CUSTOM_FILE_CAPTION = """<b>
+🎬 𝐓𝐢𝐭𝐥𝐞 - <code>{file_name}</code>
+✯ ━━━━━ ✧ ━━━━━ ✯
+➠ 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐘𝐨𝐮𝐫 #𝐑𝐞𝐪𝐮𝐞𝐬𝐭
+✯ ━━━━━ ✧ ━━━━━ ✯
+👋 ʜᴇʏ !!
+ᴋɪɴᴅʟʏ ᴀᴅᴅ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ, 
+ᴀꜰᴛᴇʀ ɢᴇᴛᴛɪɴɢ ᴍᴏᴠɪᴇꜱ/ꜱᴇʀɪᴇꜱ.
+ɪᴛ ᴡɪʟʟ ʜᴇʟᴘ ᴜꜱ ɢʀᴏᴡɪɴɢ 🙏
+✯ ━━━━━ ✧ ━━━━━ ✯
+⬆️ 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲
+👉 <a href='https://t.me/Pr0fess0r99'>𝐏𝐑𝟎𝐅𝐄𝐒𝐒𝟎𝐑 𝟗𝟗</a>
+✯ ━━━━━ ✧ ━━━━━ ✯
+𝐉𝐨𝐢𝐧 🎗️ 𝐒𝐡𝐚𝐫𝐞 🎗️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
+✯ ━━━━━ ✧ ━━━━━ ✯</b>"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
