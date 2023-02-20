@@ -19,6 +19,7 @@ Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH
 ### Credits
 
 - Thanks to [Pyrogram](https://github.com/pyrogram/pyrogram)
+- Thanks To [Zaute Km](https://gitHub.com/ZauteKm)
 - Thanks To [RSR](https://github.com/RSR-TG-Info)
 - Thanks To [Joelkb](https://github.com/Joelkb) 
 - Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) Who Have Edited And Modified This Repo As Now It Is (It's ME 😂)
