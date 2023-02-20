@@ -253,7 +253,7 @@ I Can't Write Everything In My Bio So I Created This...
 ├• Age⇝ 17
 ├• Relationship Status⇝ Single
 ├• Nationality⇝ Indian
-├• Location⇝ West Bengal, India, Manikpur 
+├• Location⇝ West Bengal, Manikpur 
 ├• Contact Bot⇝ Soon... 🤖
 ╰──────⍟───────╯
 
