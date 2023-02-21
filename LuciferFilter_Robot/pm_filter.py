@@ -462,7 +462,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Piracy Is Crime')
-        await client.send_chat_action(chat_id=message.chat.id, action=enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -503,7 +503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Piracy Is Crime')
-        await client.send_chat_action(chat_id=message.chat.id, action=enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
