@@ -461,7 +461,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -502,7 +501,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -517,6 +515,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="☑️ ☑️ ☑️ ☑️"
         )
     elif "about" in query.data:
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         return await query.answer("""
 ꧁֍Lᴜᴄɪғᴇʀ Fɪʟᴛᴇʀ Bᴏᴛ֍꧂
 
@@ -542,9 +541,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -567,9 +565,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )      
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -592,9 +589,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -621,9 +617,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -646,9 +641,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -671,9 +665,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )      
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -696,9 +689,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -721,9 +713,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup, 
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -747,9 +738,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -770,9 +760,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=Script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("You Are Not A Authorized User ⚠️", show_alert=True)
-            await query.answer('Piracy Is Crime')
-            await message.reply_chat_action(enums.ChatAction.TYPING)
+            await query.answer("You Are Not A Authorized User ⚠️", show_alert=True)          
+            await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
             await query.message.edit_text(
                 text="☑️ ☐ ☐ ☐"
             )
@@ -796,9 +785,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )      
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -821,9 +809,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -846,9 +833,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -871,9 +857,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )       
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -896,9 +881,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        )      
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -922,8 +906,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -947,8 +930,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
@@ -972,8 +954,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
-        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
         )
