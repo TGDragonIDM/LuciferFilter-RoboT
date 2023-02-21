@@ -462,6 +462,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Connection', callback_data='coct'),
@@ -488,6 +501,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=Script.HELP_TXT.format(query.from_user.mention, name=temp.Bot_Name),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif "about" in query.data:
         return await query.answer("""
@@ -516,6 +543,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='manualfilter')
@@ -527,6 +568,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "autofilter":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='auto_manual')
@@ -537,6 +592,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "auto_manual":
         buttons = [[
@@ -553,6 +622,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
@@ -563,6 +646,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "tgraph":
         buttons = [[
@@ -575,6 +672,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "info":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
@@ -586,6 +697,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "search":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
@@ -596,6 +721,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup, 
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "gtrans":
         buttons = [[
@@ -609,6 +748,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
@@ -618,6 +771,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(text=Script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
             await query.answer("You Are Not A Authorized User ⚠️", show_alert=True)
+            await query.answer('Piracy Is Crime')
+            await message.reply_chat_action(enums.ChatAction.TYPING)
+            await query.message.edit_text(
+                text="☑️ ☐ ☐ ☐"
+            )
+            await query.message.edit_text(
+                text="☑️ ☑️ ☐ ☐"
+            )
+            await query.message.edit_text(
+                text="☑️ ☑️ ☑️ ☐"
+            )
+            await query.message.edit_text(
+                text="☑️ ☑️ ☑️ ☑️"
+            )
 
     elif query.data == "purge":
         buttons = [[
@@ -630,16 +797,44 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "restric":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=Script.RESTRIC_TXT,
+            text=Script.RESTRIC_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "pin":
         buttons = [[
@@ -652,6 +847,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "fillings":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='manualfilter')
@@ -662,6 +871,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "who":
         buttons = [[
@@ -674,6 +897,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "donate":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='start')
@@ -684,6 +921,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )
     elif query.data == "song":
         buttons = [[
@@ -696,6 +947,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
     elif query.data == "font":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
@@ -706,6 +971,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Piracy Is Crime')
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
         )   
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
