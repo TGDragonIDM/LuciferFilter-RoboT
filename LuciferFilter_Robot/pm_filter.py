@@ -460,20 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )       
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Connection', callback_data='coct'),
