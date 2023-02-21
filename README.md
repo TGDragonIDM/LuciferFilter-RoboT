@@ -26,13 +26,13 @@ Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH
 
 ### Support
 
-Join Our [Telegram Group](https://t.me/TechProjectsChats) For Support/Assistance And Our [Channel](https://telegram.dog/TechProjectsUpdates) For Updates.
+Join Our [Telegram Group](https://t.me/Bkm_Bots_Support) For Support/Assistance And Our [Channel](https://telegram.dog/Bkm_Bots_Updates) For Updates.
 
 Report Bugs, Give Feature Requests There..
 Do Fork And Star The Repository If You Liked It.
 
-<a href="https://telegram.dog/TechProjectsUpdates"><img alt="telegram" src="https://img.shields.io/badge/TECH Projects-%22B1B17.svg?&logo=telegram&logoColor=white"></a>
-<a href="https://telegram.dog/TechProjectsChats"><img alt="telegram" src="https://img.shields.io/badge/TECH Support Chat-%22B1B17.svg?&logo=telegram&logoColor=white"></a>
+<a href="https://telegram.dog/Bkm_Bots_Support"><img alt="telegram" src="https://img.shields.io/badge/BKM Botz Support-%22B1B17.svg?&logo=telegram&logoColor=white"></a>
+<a href="https://telegram.dog/Bkm_Bots_Updates"><img alt="telegram" src="https://img.shields.io/badge/BKM Botz-%22B1B17.svg?&logo=telegram&logoColor=white"></a>
 
 ### Features
 
