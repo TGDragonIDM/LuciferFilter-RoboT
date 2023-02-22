@@ -107,26 +107,23 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.Bot_Username}"),
-             InlineKeyboardButton(f"📃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
-                                  callback_data="pages")]
-        )
-    elif off_set is None:
-        btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.Bot_Username}"),
-             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+        )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
+        )
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")]
+                InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
             )
     btn.insert(0, [
-        InlineKeyboardButton("🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")
-    ])
+        InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot"),
+    ])   
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -165,11 +162,7 @@ async def advantage_spoll_choker(bot, query):
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
-        await query.message.delete()
-        try:
-            await query.message.reply_to_message.delete()
-        except:
-            pass
+        await query.message.delete()      
     elif query.data == "delallconfirm":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -440,6 +433,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
     elif query.data == "pages":
         await query.answer()
+    elif query.data == "luciferfilterbot":
+        await query.answer(text=Script.LUCIFER_FILTER, show_alert=True)
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Chat ➕', url=f'http://t.me/{temp.Bot_Username}?startgroup=true')
@@ -455,6 +450,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.START_TXT.format(query.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username),
             disable_web_page_preview=True,
@@ -483,11 +491,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Close', callback_data='close_data'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.HELP_TXT.format(query.from_user.mention, name=temp.Bot_Name),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -501,6 +504,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="☑️ ☑️ ☑️ ☑️"
         )
+        await query.message.edit_text(
+            text=Script.HELP_TXT.format(query.from_user.mention, name=temp.Bot_Name),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )       
     elif "about" in query.data:
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         return await query.answer("""
@@ -523,60 +531,54 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« Back', callback_data='auto_manual'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.MANUALFILTER_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )             
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='manualfilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.BUTTON_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )      
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )            
     elif query.data == "autofilter":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='auto_manual')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.AUTOFILTER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )       
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -590,6 +592,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="☑️ ☑️ ☑️ ☑️"
         )
+        await query.message.edit_text(
+            text=Script.AUTOFILTER_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )              
     elif query.data == "auto_manual":
         buttons = [[
             InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
@@ -599,108 +607,102 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.AUTO_MANUAL_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.CONNECTION_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "tgraph":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.TGRAPH_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )      
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )             
     elif query.data == "info":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.INFO_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "search":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.SEARCH_TXT.format(name=temp.Bot_Name),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup, 
-            parse_mode=enums.ParseMode.HTML
-        )       
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -714,18 +716,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="☑️ ☑️ ☑️ ☑️"
         )
+        await query.message.edit_text(
+            text=Script.SEARCH_TXT.format(name=temp.Bot_Name),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup, 
+            parse_mode=enums.ParseMode.HTML
+        )             
     elif query.data == "gtrans":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Lang Codes', url='https://cloud.google.com/translate/docs/languages')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.GTRANS_TXT.format(name=temp.Bot_Name),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )       
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -739,16 +741,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="☑️ ☑️ ☑️ ☑️"
         )
+        await query.message.edit_text(
+            text=Script.GTRANS_TXT.format(name=temp.Bot_Name),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )            
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        if query.from_user.id in ADMINS:
-            await query.message.edit_text(text=Script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
-        else:
-            await query.answer("You Are Not A Authorized User ⚠️", show_alert=True)          
-            await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
             await query.message.edit_text(
                 text="☑️ ☐ ☐ ☐"
             )
@@ -761,186 +765,185 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 text="☑️ ☑️ ☑️ ☑️"
             )
+        if query.from_user.id in ADMINS:
+            await query.message.edit_text(text=Script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+        else:
+            await query.answer("You Are Not A Authorized User ⚠️", show_alert=True)          
+            
 
     elif query.data == "purge":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.PURGE_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )      
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "restric":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.RESTRIC_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )             
     elif query.data == "pin":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.PIN_MESSAGE_TXT.format(name=temp.Bot_Name),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "fillings":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='manualfilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.FILLINGS_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )       
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )              
     elif query.data == "who":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.WHO_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )      
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )             
     elif query.data == "donate":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.DONATE_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )       
     elif query.data == "song":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
         await query.message.edit_text(
             text=Script.SONG_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
-        await query.message.edit_text(
-            text="☑️ ☐ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☐ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☐"
-        )
-        await query.message.edit_text(
-            text="☑️ ☑️ ☑️ ☑️"
-        )
+        )      
     elif query.data == "font":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.FONT_TXT.format(query.from_user.mention),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
         await query.message.edit_text(
             text="☑️ ☐ ☐ ☐"
@@ -953,7 +956,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text="☑️ ☑️ ☑️ ☑️"
-        )   
+        )
+        await query.message.edit_text(
+            text=Script.FONT_TXT.format(query.from_user.mention),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )          
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
@@ -1061,15 +1070,28 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
+            [InlineKeyboardButton(text="Next Page ➡", callback_data=f"next_{req}_{key}_{offset}")]
+        )    
+        btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="Check PM!", url=f"https://t.me/{temp.Bot_Username}"),
-             InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+        )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages"),
-             InlineKeyboardButton(text="Check PM!", url=f"https://t.me/{temp.Bot_Username}")]
+             InlineKeyboardButton("🗑️", callback_data="close_data"),
+             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
         )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
+        )
+    btn.insert(0, [
+        InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot"),
+    ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
