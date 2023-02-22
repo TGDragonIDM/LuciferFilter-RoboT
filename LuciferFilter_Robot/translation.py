@@ -302,6 +302,13 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 __🗣 In Order To Get The Movie Requested By You In Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
 
 **👇 SUBSCRIBE CHANNEL & TRY AGAIN 👇**"""
+
+    LUCIFER_FILTER = """
+ミ★ LUCIFER FILTER BOT ★彡
+
+👉 Search Of New & Old Movies/Series
+👉 Avilable In Many Sizes & Languages 
+👉 Receivable In Various Quality"""
    
     CUSTOM_FILE_CAPTION = """<b>
 🎬 𝐓𝐢𝐭𝐥𝐞 - <code>{file_name}</code>
