@@ -751,7 +751,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)       
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)       
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=Script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
