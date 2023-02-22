@@ -23,7 +23,7 @@ PICS = (environ.get("PICS", ""))
 
 # Admins, Channels & Users
 ADMINS = environ.get("ADMINS", "")
-SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "TechProjectsChats")
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "Bkm_Bots_Support")
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "")
 CHANNELS = [int(ch) if search.search(ch) else ch for ch in environ.get("CHANNELS", "0").split()]
 LOG_CHANNEL = environ.get("LOG_CHANNEL", "")
