@@ -159,13 +159,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
                     text=f"{imdb.get('title')} - {imdb.get('year')}",
                     url=imdb['url'],
                 )
-            ],
-            [
-                InlineKeyboardButton(
-                    text=f"Projects Channel",
-                    url="https://t.me/josprojects"
-                )
-            ],
+            ]            
         ]
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
