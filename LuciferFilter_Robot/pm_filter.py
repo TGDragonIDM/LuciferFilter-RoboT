@@ -7,7 +7,8 @@ import pyrogram
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from LuciferFilter_Robot.translation import Script
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
-from LuciferFilter_Robot import ADMINS, AUTH_CHANNEL, LOG_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
+from LuciferFilter_Robot import ADMINS, AUTH_CHANNEL, LOG_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
+from config import AUTH_GROUPS
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.handlers import CallbackQueryHandler
 from pyrogram import Client, filters, enums 
@@ -24,7 +25,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)
     if k == False:
