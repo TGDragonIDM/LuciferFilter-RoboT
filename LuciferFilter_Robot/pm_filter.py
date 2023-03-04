@@ -51,14 +51,14 @@ async def next_page(bot, query):
     if int(ad_user) in ADMINS:
         pass
     elif int(req) not in [query.from_user.id, 0]:
-        return await query.answer("Hello 👋 (query.from_user.first_name) This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
+        return await query.answer("Hello (query.from_user.first_name) This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("Hello 👋 (query.from_user.first_name) You Are Using My Old Messages, Please Request Again 🙏", show_alert=True)
+        await query.answer("Hello (query.from_user.first_name) You Are Using My Old Messages, Please Request Again 🙏", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -144,7 +144,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("Hello 👋 (query.from_user.first_name) You Are Using My Old Messages, Please Request Again 🙏", show_alert=True)
+        return await query.answer("Hello (query.from_user.first_name) You Are Using My Old Messages, Please Request Again 🙏", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Checking for Movie in database...')
     k = await manual_filters(bot, query.message, text=movie)
@@ -356,7 +356,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if int(ad_user) in ADMINS:
             pass
         elif int(user) != 0 and query.from_user.id != int(user):
-            return await query.answer("Hello 👋 {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
+            return await query.answer("Hello {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
 
         if not files_:
             return await query.answer('No such file exist.')
@@ -396,7 +396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer(f"Hello 👋 {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
+                await query.answer(f"Hello {query.from_user.first_name} This Is Not Your Message 🤗\n\nRequest Your Own ✍️", show_alert=True)
                 await query.answer('Check Bot PM, I Have Sent Your Files In PM 📥', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn..!', show_alert=True)
@@ -1120,25 +1120,21 @@ async def auto_filter(client, msg, spoll=False):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hehe.delete()
-            await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hmm.delete()
-            await message.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="https://graph.org/file/a6f99f5b71a20468b3180.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
-            await fek.delete()
-            await msg.delete()
+            await fek.delete()            
     else:
         fuk = await message.reply_photo(photo="https://graph.org/file/a6f99f5b71a20468b3180.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
-        await fuk.delete()
-        await msg.delete()
+        await fuk.delete()        
     if spoll:
         await msg.message.delete()
 
