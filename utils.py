@@ -38,7 +38,7 @@ class temp(object):
     BANNED_CHATS = []
     PYRO_VERSION = []
     ME = None
-    CURRENT = int(os.environ.get("SKIP", 0))
+    CURRENT = int(os.environ.get("SKIP", 2))
     CANCEL = False
     MELCOW = {}
     Bot_Username = None # Username
