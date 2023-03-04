@@ -12,6 +12,8 @@ from pyrogram.raw.all import layer
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from LuciferFilter_Robot import API_ID, API_HASH, BOT_TOKEN
+from typing import Union, Optional, AsyncGenerator
+from pyrogram import types
 from utils import temp
 
 class Bot(Client):
