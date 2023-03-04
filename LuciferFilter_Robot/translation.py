@@ -29,7 +29,7 @@ It's Power Full <a href='t.me/{username}'>{name}</a> Here 😎
 
 Add Me To Your Group And Make Sure I'm an Admin There And Enjoy My Pever Show 😉
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     HELP_TXT = """<b>👋 Hello {},
 
@@ -45,7 +45,7 @@ I Can Guide You Through All Of {name}'s Cool Features & How To Properly Use Them
 • /del - Delete a Specific Filter In Chat.
 • /delall - Delete The Whole Filters In a Chat(Chat Owner Only).
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
@@ -54,7 +54,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 2. Make Sure That Your Channel Does Not Contains Camrips, Porn And Fake Files.
 3. Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My DataBase.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
@@ -70,7 +70,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     FILLINGS_TXT = """Help: <b>Fillings</b>
 
@@ -88,7 +88,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 
 <b>Example:</b> <code>/filter Test Hello {mention} This Is Your Username : {username} And This Is Your ID : {id}</code>
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     CONNECTION_TXT = """Help: <b>Group Connections</b>
 
@@ -104,7 +104,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • /disconnect  - Disconnect From a chyat.
 • /connections - List All Your Connections.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
@@ -122,7 +122,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works On Both PM And Group.
 • These Commands Can Be Used By Any Member.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     INFO_TXT = """Help: <b>Information</b>
 
@@ -138,7 +138,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works On Both PM And Group.
 • These Commands Can Be Used By Any Member.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     GTRANS_TXT = """Help: <b>Google Translator</b>
 
@@ -152,7 +152,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works On Both PM And Group.
 • {name} Can Translate Texts To 200+ Languages.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     SEARCH_TXT = """Help: <b>IMDB</b>
 
@@ -167,7 +167,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • More Search Tools Can Be Found On Inline.
 • These Commands Works On Both PM And Group.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     PURGE_TXT = """Help: <b>Purge</b>
 
@@ -181,7 +181,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works On Group.
 • These Commands Can Be Used By Admin Only.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     RESTRIC_TXT = """Help: <b>Restrictions</b>
 
@@ -204,7 +204,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works On Group.
 • These Commands Can Be Used By Admin Only.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
 
@@ -219,7 +219,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • These Commands Works Only Group.
 • These Commands Can Be Used By Admin Only.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     ADMIN_TXT = """Help: <b>Admin Mods</b>
 
@@ -239,7 +239,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 • /channel - To Get List Of Total Connected Channels.
 • /broadcast - To Broadcast a Message To All Users.
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
  
     WHO_TXT = """Hello 👋 {},
 I Can't Write Everything In My Bio So I Created This...
@@ -247,8 +247,8 @@ I Can't Write Everything In My Bio So I Created This...
 ╭──[─═ ᴘᴇʀꜱᴏɴᴀʟ ɪɴꜰᴏ ═─]
 ├• Name⇝ Bikash Maity 
 ├• Gender⇝ What Do You Think
-├• TG Name⇝ PR0FESS0R 99 
-├• Username⇝ @Pr0fess0r99
+├• TG Name⇝ PR0FESS0R 
+├• Username⇝ @PR0FESS0R_TG
 ├• Birthday⇝ 10th January 2006
 ├• Age⇝ 17
 ├• Relationship Status⇝ Single
@@ -280,7 +280,7 @@ Thank You For Showing Interest In My Works 🙏"""
 <b>Commands and Usage:</b>
 • /song [Song Name] or /song [YouTube Link] - To Download Music
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
   
     FONT_TXT = """Help: <b>Stylish Font</b>
 
@@ -289,7 +289,7 @@ Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
 <b>Commands and Usage:</b>
 • /font [Text] - Generate Your Stylish Text
 
-Maintained By ✔️ <a href='https://t.me/Pr0fess0r99'>PR0FESS0R 99</a></b>"""
+Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
     STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
@@ -321,7 +321,7 @@ __🗣 In Order To Get The Movie Requested By You In Our Groups, You Will Have T
 ɪᴛ ᴡɪʟʟ ʜᴇʟᴘ ᴜꜱ ɢʀᴏᴡɪɴɢ 🙏
 ✯ ━━━━━ ✧ ━━━━━ ✯
 ⬆️ 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲
-👉 <a href='https://t.me/Pr0fess0r99'>𝐏𝐑𝟎𝐅𝐄𝐒𝐒𝟎𝐑 𝟗𝟗</a>
+👉 <a href='https://t.me/PR0FESS0R_TG'>𝐏𝐑𝟎𝐅𝐄𝐒𝐒𝟎𝐑</a>
 ✯ ━━━━━ ✧ ━━━━━ ✯
 𝐉𝐨𝐢𝐧 🎗️ 𝐒𝐡𝐚𝐫𝐞 🎗️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 ✯ ━━━━━ ✧ ━━━━━ ✯</b>"""
