@@ -514,7 +514,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         return await query.answer("""
 ꧁֍Lᴜᴄɪғᴇʀ Fɪʟᴛᴇʀ Bᴏᴛ֍꧂
 
-ツ Creator: PR0FESS0R 99
+ツ Creator: PR0FESS0R
 ❖ Language: Python3
 ❖ Hosted: Heroku
 ❖ Version: 10.0
