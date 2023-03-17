@@ -124,7 +124,6 @@ async def next_page(bot, query):
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
         )
-    else:
         btn.append(
             [
                 InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
