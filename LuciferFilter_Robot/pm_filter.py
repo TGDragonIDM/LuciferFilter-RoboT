@@ -1070,7 +1070,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
-    elif off_set is None:
+    elif offset is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
