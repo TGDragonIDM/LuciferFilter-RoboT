@@ -111,19 +111,16 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
-    elif off_set is None:
-        btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
-    else:
+    elif off_set is None:       
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("🗑️", callback_data="close_data"),
-             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
         )
+    else:
         btn.append(
             [
                 InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
@@ -1064,21 +1061,14 @@ async def auto_filter(client, msg, spoll=False):
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
-        req = message.from_user.id if message.from_user else 0
+        req = message.from_user.id if message.from_user else 0       
         btn.append(
-            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}",
-                                  callback_data="pages")]
-        )
-    elif offset is None:
-        btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
-             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+            [InlineKeyboardButton(f"🗓 1/1", callback_data="pages"),
+             InlineKeyboardButton("🗑️", callback_data="close_data")],             
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
