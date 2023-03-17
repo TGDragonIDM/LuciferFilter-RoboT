@@ -9,3 +9,5 @@ RUN mkdir /PR0FESS0R-TG
 WORKDIR /PR0FESS0R-TG
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
+
+
