@@ -107,14 +107,14 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
@@ -1062,24 +1062,25 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-    if offset != "":
-        key = f"{message.chat.id}-{message.id}"
-        BUTTONS[key] = search
-        req = message.from_user.id if message.from_user else 0
+    if 0 < offset <= 10:
+        off_set = 0
+    elif offset == 0:
+        off_set = None
+    else:
+        off_set = offset - 10
+    if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton(text="Next Page ➡", callback_data=f"next_{req}_{key}_{offset}")]
-        )    
-        btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
-             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}",
+                                  callback_data="pages")]
         )
+    elif off_set is None:
         btn.append(
-                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
-        )
+            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1", callback_data="pages"),
+            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("🗑️", callback_data="close_data"),
              InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
         )
@@ -1093,7 +1094,9 @@ async def auto_filter(client, msg, spoll=False):
     TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
-            query=search,
+            group = message.chat.title,
+            requested = message.from_user.mention,
+            query = search,
             title=imdb['title'],
             votes=imdb['votes'],
             aka=imdb["aka"],
