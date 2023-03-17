@@ -118,18 +118,17 @@ async def next_page(bot, query):
              InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
         )
         btn.append(
-                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
+            [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
         )
     else:
         btn.append(
-            [
-                InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
-            )
+            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
+        )
     btn.insert(0, [
-        InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot"),
-    ])   
+        InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot")],     
+        )   
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
