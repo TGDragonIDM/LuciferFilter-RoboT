@@ -11,7 +11,7 @@
       "bot"
     ],
     "website": "https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT",
-    "repository": "https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT",
+    "repository": "https://github.com/TGDragonIDM/LuciferFilter-RoboT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram bot token.",
