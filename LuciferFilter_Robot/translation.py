@@ -234,8 +234,8 @@ Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 • /disable - To Disable a Chat.
 • /mute - To Mute a User.
 • /unmute - To Unmute a User.
-• /ban - To Ban a User.
-• /unban - To Unban a User.
+• /ban_users - To Ban a User.
+• /unban_users - To Unban a User.
 • /channel - To Get List Of Total Connected Channels.
 • /broadcast - To Broadcast a Message To All Users.
 • /grp_broadcast - To Broadcast a Message To All Connected Groups."""
