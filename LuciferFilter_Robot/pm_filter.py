@@ -107,23 +107,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("🔙 Back", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:       
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),             
-             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
-        )
-        btn.append(
-            [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
-        )
+             InlineKeyboardButton("Next ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
+        )        
     else:
         btn.append(
-            [InlineKeyboardButton("🔙 Back Page", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("🔙 Back", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
+             InlineKeyboardButton("Next ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
     btn.insert(0, [
         InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot")],     
@@ -1113,15 +1110,12 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0       
         btn.append(
             [InlineKeyboardButton(f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{offset}")])
+             InlineKeyboardButton("Next ➡", callback_data=f"next_{req}_{key}_{offset}")])
     else:
         btn.append(
-            [InlineKeyboardButton(f"🗓 1/1", callback_data="pages"),
-             InlineKeyboardButton("🗑️ Close", callback_data="close_data")],             
-        )
-        btn.append(
-                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
-        )
+            [InlineKeyboardButton(f"🗓 1/1", callback_data="pages")],
+                          
+        )       
     btn.insert(0, [
         InlineKeyboardButton(text="ミ★ LUCIFER FILTER BOT ★彡", callback_data="luciferfilterbot"),
     ])
