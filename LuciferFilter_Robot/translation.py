@@ -220,10 +220,8 @@ Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
 Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
-    ADMIN_TXT = """Help: <b>Admin Commands</b>
+    ADMIN_TXT = """<b>This Module Only Works For My Admins</b>
 
-
-<b>Commands and Usage:</b>
 • /logs - To Get The Rescent Errors.
 • /stats - To Get Status Of Files In DataBase.
 • /delete - To Delete a Specific File From DataBase.
