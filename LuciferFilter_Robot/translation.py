@@ -19,9 +19,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# Telegram Link : https://telegram.dog/TechProjectsUpdates 
-# Repo Link : https://github.com/Pr0fess0r99/LuciferFilter-RoboT
-# License Link : https://github.com/Pr0fess0r99/LuciferFilter-RoboT/blob/LuciferFilter-RoboT/LICENSE
+# Repo Link : https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT
+# License Link : https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT/blob/LuciferFilter-RoboT/LICENSE
 class Script(object):
     START_TXT = """<b>👋 Hello {},
 
@@ -221,25 +220,25 @@ Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
 Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
 
-    ADMIN_TXT = """Help: <b>Admin Mods</b>
+    ADMIN_TXT = """Help: <b>Admin Commands</b>
 
-<b>NOTE:</b>
-• This Module Only Works For My Admins 
 
 <b>Commands and Usage:</b>
 • /logs - To Get The Rescent Errors.
 • /stats - To Get Status Of Files In DataBase.
 • /delete - To Delete a Specific File From DataBase.
+• /deleteall - To Delete All File From DataBase.
 • /users - To Get List Of My Users And IDs.
 • /chats - To Get List Of The My Chats And IDs.
 • /leave - To Leave From a Chat.
 • /disable - To Disable a Chat.
-• /ban_users - To Ban a User.
-• /unban_users - To Unban a User.
+• /mute - To Mute a User.
+• /unmute - To Unmute a User.
+• /ban - To Ban a User.
+• /unban - To Unban a User.
 • /channel - To Get List Of Total Connected Channels.
 • /broadcast - To Broadcast a Message To All Users.
-
-Maintained By ✔️ <a href='https://t.me/PR0FESS0R_TG'>PR0FESS0R</a></b>"""
+• /grp_broadcast - To Broadcast a Message To All Connected Groups."""
  
     WHO_TXT = """Hello 👋 {},
 I Can't Write Everything In My Bio So I Created This...
