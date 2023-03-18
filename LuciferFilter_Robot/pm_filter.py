@@ -1113,11 +1113,11 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0       
         btn.append(
             [InlineKeyboardButton(f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("Next Page ➡️", callback_data=f"next_{req}_{key}_{offset}")])
     else:
         btn.append(
             [InlineKeyboardButton(f"🗓 1/1", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data")],             
+             InlineKeyboardButton("🗑️ Close", callback_data="close_data")],             
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
