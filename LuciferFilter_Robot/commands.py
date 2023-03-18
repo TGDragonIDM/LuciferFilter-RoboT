@@ -53,7 +53,7 @@ async def start(client, message):
             InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
             InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
-            InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
+            InlineKeyboardButton('❎ Close This Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -108,7 +108,7 @@ async def start(client, message):
             InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
             InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
-            InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
+            InlineKeyboardButton('❎ Close This Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
