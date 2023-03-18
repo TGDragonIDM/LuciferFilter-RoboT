@@ -451,7 +451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎭 Who Am I', callback_data='who'),
             InlineKeyboardButton('Donate 💸', callback_data='donate')
             ],[
-            InlineKeyboardButton('❎ Close the Menu ❎', callback_data='close_data')
+            InlineKeyboardButton('❎ Close This Menu ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
@@ -492,6 +492,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Font', callback_data='font'),
             ],[
             InlineKeyboardButton('Back', callback_data='start'),
+            InlineKeyboardButton('Status', callback_data='stats'),
             InlineKeyboardButton('Close', callback_data='close_data'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -953,7 +954,38 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )          
+        ) 
+    elif query.data == "stats":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Refresh', callback_data='rfrsh')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.send_chat_action(query.message.chat.id, enums.ChatAction.TYPING)
+        await query.message.edit_text(
+            text="☑️ ☐ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☐ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☐"
+        )
+        await query.message.edit_text(
+            text="☑️ ☑️ ☑️ ☑️"
+        )
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
+        monsize = await db.get_db_size()
+        free = 536870912 - monsize
+        monsize = get_size(monsize)
+        free = get_size(free)
+        await query.message.edit_text(
+            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )         
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
