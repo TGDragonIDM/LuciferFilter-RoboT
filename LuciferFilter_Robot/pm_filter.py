@@ -1,4 +1,4 @@
-# Kanged From BIKASH
+# Kanged From @TroJanZheX
 import re
 import ast
 import asyncio
@@ -113,9 +113,8 @@ async def next_page(bot, query):
         )
     elif off_set is None:       
         btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑️", callback_data="close_data"),
-             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),             
+             InlineKeyboardButton("Next Page ➡", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
         btn.append(
             [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.Bot_Username}")]
