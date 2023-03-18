@@ -2,16 +2,16 @@
   <img src="https://graph.org/file/a6f99f5b71a20468b3180.jpg" alt="LuciferFilter-RoboT Logo">
 </p>
 <h1 align="center">
-<a href="https://telegram.dog/LuciferFilter_Robot">LuciferFilter-RoboT</a>
+<a href="https://telegram.dog/LuciferFilter_Bot">LuciferFilter-RoboT</a>
 </h1>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Repo Size"> <br>
-    <img src="https://img.shields.io/github/issues/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Issues">
-    <img src="https://img.shields.io/github/forks/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Forks">
-    <img src="https://img.shields.io/github/stars/Pr0fess0r99/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Stars">
+    <img src="https://img.shields.io/github/license/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="LICENSE">
+    <img src="https://img.shields.io/github/contributors/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Repo Size"> <br>
+    <img src="https://img.shields.io/github/issues/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Issues">
+    <img src="https://img.shields.io/github/forks/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Forks">
+    <img src="https://img.shields.io/github/stars/PR0FESS0R-TG/LuciferFilter-RoboT?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
 
 Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH 
@@ -22,7 +22,7 @@ Best Indian Telegram AutoFilter Bot || Using Python3 Pyrogram By BIKASH
 - Thanks To [Zaute Km](https://gitHub.com/ZauteKm)
 - Thanks To [RSR](https://github.com/RSR-TG-Info)
 - Thanks To [Joelkb](https://github.com/Joelkb) 
-- Thanks To [PR0FESS0R 99](https://github.com/Pr0fess0r99) Who Have Edited And Modified This Repo As Now It Is (It's ME 😂)
+- Thanks To [PR0FESS0R](https://github.com/PROFESS0R-TG) Who Have Edited And Modified This Repo As Now It Is (It's ME 😂)
 
 ### Support
 
@@ -140,7 +140,7 @@ Read This Before You Start Messing Up With Your Edits
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Pr0fess0r99/LuciferFilter-RoboT">
+<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
@@ -148,14 +148,14 @@ Read This Before You Start Messing Up With Your Edits
 
 <details><summary>Deploy To Koyeb</summary>
 <br>
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Pr0fess0r99/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot">
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/PR0FESS0R-TG/LuciferFilter-RoboT&branch=main&name=luciferfilterrobot">
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy To Koyeb">
 </a>
 </details>
 
 <details><summary>Deploy To Render</summary>
 <br>
-<a href="https://render.com/deploy?repo=https://github.com/Pr0fess0r99/LuciferFilter-RoboT/tree/web">
+<a href="https://render.com/deploy?repo=https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT/tree/web">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 </details>
@@ -163,7 +163,7 @@ Read This Before You Start Messing Up With Your Edits
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Pr0fess0r99/LuciferFilter-RoboT 
+git clone https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT 
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit config.py with variables as given below then run bot
@@ -173,6 +173,6 @@ python3 bot.py
 </details>
 
 ## Inspiration
-This is an attempt to create a clone of a BOAT made out of [banana trees 🌳](https://telegram.dog/GetTGLink/4187)
+This Is An Attempt To Create a Clone Of a BOT Made Out Of [Benana Trees 🌳](https://telegram.dog/GetTGLink/4187)
 
 [![For Vaza](https://telegra.ph/file/e743b0c8a04252774bac2.jpg)](https://telegra.ph/file/98342dc186fd7484cba91.mp4 "Oru Kootam Vazhakalk samarpikkunnu")
