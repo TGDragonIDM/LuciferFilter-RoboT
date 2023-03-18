@@ -140,7 +140,7 @@ Read This Before You Start Messing Up With Your Edits
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/PR0FESS0R-TG/LuciferFilter-RoboT">
+<a href="https://heroku.com/deploy?template=https://github.com/TGDragonIDM/LuciferFilter-RoboT">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
