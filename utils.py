@@ -6,7 +6,7 @@ import requests
 import aiohttp
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from LuciferFilter_Robot import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM
-from imdb import Cinemagoer
+from imdb import IMDb
 from pyrogram.types import Message
 from typing import Union
 from pyrogram import enums
@@ -25,7 +25,7 @@ BTN_URL_REGEX = re.compile(
     r"(\[([^\[]+?)\]\((buttonurl|buttonalert):(?:/{0,2})(.+?)(:same)?\))"
 )
 
-imdb = Cinemagoer()  
+imdb = IMDb()  
 
 BANNED = {}
 SMART_OPEN = '“'
